@@ -1,0 +1,54 @@
+함수정리
+
+replace() : 특정한 문자열을 다른 문자열로 치환한 문자열을 반환한다.
+-Example
+a = "Hello"
+b = a.replace("Hello", "Hi")
+print(b)
+=> Hi
+
+count(부분 문자열) : 부분 문자열의 개수 반환 수행
+-Example
+s = "Hello"
+print(s.count("I"))
+=> 2
+
+find(부분 문자열) : 부분 문자열의 위치를 반환
+※ 찾지 못한경우에는 -1 반환	
+-Example
+fullStr = "Hello,Can you find me?"
+findStr = "find"
+index = fullStr.find(findStr)
+print("Found : ",index)
+=> 15 
+
+upper() : 문자열을 대문자로 바꾼 결과를 출력
+-Example
+fullStr = "Hello, Can you find me?"
+print(fullStr.upper())
+=> "HELLO, CAN YOU FIND ME?"
+
+lower() : 문자열을 소문자로 바꾼 결과를 출력
+-Example
+fullStr = "Hello, Can you find me?"
+print(fullStr.lower())
+=> "hello,can you find me?"
+
+strip(부분 문자열) : 부분 문자열을 지운 결과를 출력
+-Example
+fullStr = "Hello, Can you find me?"
+print(fullStr.strip("Hello"))
+=> Can you find me?
+
+split(부분 문자열) : 부분 문자열로 나눈 배열을 출력
+-Example
+fullStr = "Hello, Can you find me?"
+s = fullStr.split(" ")
+print(s)
+=> ['Hello', 'Can', 'you', 'find', 'me?']
+
+-zfill(자릿수) : 자릿수만큼 나머지를 0으로 채움
+-Example
+result = "999"
+print(result.zfill(10))
+=> 0000000999
